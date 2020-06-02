@@ -1,7 +1,7 @@
 # using node 8.1.1 the latest supported by firebase
 # using alpine to boost CI/CD pipline by using the lightweight linux alpine
 
-FROM node:8.16.2-alpine3.9
+FROM node:10.20.1-alpine3.10
 
 USER node
 RUN mkdir /home/node/.npm-global
@@ -15,4 +15,4 @@ RUN npm i npm@latest -g
 RUN npm install -g eslint
 
 # install Firebase CLI
-RUN npm install -g firebase-tools@7.6.2
+RUN npm install -g firebase-tools@8.2.0

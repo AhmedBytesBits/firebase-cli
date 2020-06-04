@@ -15,4 +15,4 @@ RUN npm i npm@latest -g
 RUN npm install -g eslint
 
 # install Firebase CLI
-RUN npm install -g firebase-tools@8.2.0
+RUN npm install -g firebase-tools@8.0.3
